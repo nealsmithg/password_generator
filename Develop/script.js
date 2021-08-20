@@ -15,7 +15,7 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
   var password = [];
- var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","Z","W","X","Y","Z"];
+  var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","Z","W","X","Y","Z"];
   var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
   var numbers = ["1","2","3","4","5","6","7","8","9","0"];
   var specCharacters = [" ","!",'"',"#","$","%","&","'","(",")","*","+",",","-",".","/",":",":","<","=",">","?","@","[",,"]","^","_","`","{","|","}","~","\U+005C"];
@@ -41,13 +41,9 @@ function generatePassword(){
   if (useSpec == true){
     passwordArray = passwordArray.concat(specCharacters);
   };
-  console.log(passwordArray);
-  console.log(password);
   for(var i = 0; i < length; i++){
     password.push(passwordArray[Math.floor(Math.random()*passwordArray.length)]);
   };
-  console.log(password);
   passwordText = password.join("");
-  console.log(password);
-  console.log(passwordText);
+  return passwordText;
 }
