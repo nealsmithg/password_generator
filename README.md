@@ -5,3 +5,6 @@ This generator is avalible online for anyone to use. All you have to do is open 
 
 When loaded the page should look like this and all you need to do is click on the red "Generate Password" button.
 ![Alt text](./assets/03-javascript-homework-demo.png)
+
+# final website
+https://nealsmithg.github.io/password_generator/
